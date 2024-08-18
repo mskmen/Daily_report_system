@@ -110,6 +110,7 @@ public class ReportAction extends ActionBase {
                     ev, //ログインしている従業員を、日報作成者として登録する
                     day,
                     getRequestParam(AttributeConst.REP_TITLE),
+                    getRequestParam(AttributeConst.REP_WORK_INOUT),
                     getRequestParam(AttributeConst.REP_CONTENT),
                     null,
                     null);
@@ -204,6 +205,7 @@ public class ReportAction extends ActionBase {
             //入力された日報内容を設定する
             rv.setReportDate(toLocalDate(getRequestParam(AttributeConst.REP_DATE)));
             rv.setTitle(getRequestParam(AttributeConst.REP_TITLE));
+            rv.setWorkinout(getRequestParam(AttributeConst.REP_WORK_INOUT));
             rv.setContent(getRequestParam(AttributeConst.REP_CONTENT));
 
             //日報データを更新する

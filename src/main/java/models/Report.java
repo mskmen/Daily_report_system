@@ -74,6 +74,12 @@ public class Report {
      */
     @Column(name = JpaConst.REP_COL_TITLE, length = 255, nullable = false)
     private String title;
+    /**
+     * 出勤or退勤
+     */
+    @Lob
+    @Column(name = JpaConst.REP_COL_WORK_INOUT, length = 255, nullable = false)
+    private String workinout;
 
     /**
      * 日報の内容

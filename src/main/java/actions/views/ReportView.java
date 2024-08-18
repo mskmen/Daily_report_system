@@ -37,6 +37,10 @@ public class ReportView {
      * 日報のタイトル
      */
     private String title;
+    /**
+     * 出勤or退勤
+     */
+    private String workinout;
 
     /**
      * 日報の内容

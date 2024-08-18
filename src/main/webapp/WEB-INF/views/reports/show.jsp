@@ -24,6 +24,10 @@
                     <td><fmt:formatDate value='${reportDay}' pattern='yyyy-MM-dd' /></td>
                 </tr>
                 <tr>
+                    <th>勤務状態</th>
+                    <td><pre><c:out value="${report.workinout}" /></pre></td>
+                </tr>
+                <tr>
                     <th>内容</th>
                     <td><pre><c:out value="${report.content}" /></pre></td>
                 </tr>

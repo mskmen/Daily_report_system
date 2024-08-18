@@ -25,6 +25,10 @@
 <input type="text" name="${AttributeConst.REP_TITLE.getValue()}" id="${AttributeConst.REP_TITLE.getValue()}" value="${report.title}" />
 <br /><br />
 
+<label for="${AttributeConst.REP_WORK_INOUT.getValue()}">勤務状態</label><br />
+<input type="text" name="${AttributeConst.REP_WORK_INOUT.getValue()}" id="${AttributeConst.REP_WORK_INOUT.getValue()}" value="${report.workinout}" />
+<br /><br />
+
 <label for="${AttributeConst.REP_CONTENT.getValue()}">内容</label><br />
 <textarea  name="${AttributeConst.REP_CONTENT.getValue()}" id="${AttributeConst.REP_CONTENT.getValue()}" rows="10" cols="50">${report.content}</textarea>
 <br /><br />
